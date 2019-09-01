@@ -1,0 +1,271 @@
+$red: #E63946;
+$light-blue: #C7E7E8;
+$blue: #457B9D;
+$dark-blue: #1D3557;
+$grey: #313330;
+
+
+body {
+  padding: auto;
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+
+}
+
+a {
+  color: $blue;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+.btn {
+  &-danger {
+    background-color: $red;
+  }
+  &-primary {
+    background-color: $blue;
+    border-color: $light-blue;
+    &:hover {
+      background-color: $blue;
+      border-color: $blue;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.nav-bar {
+  background-color:$light-blue;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  color:$light-blue;
+  padding: 15px 15px 0px 15px;
+  height:60px;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 5px $red;
+  a {
+    color: $red;
+    transition: 400ms;
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.homepart{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding: 50vh;
+}
+
+
+.nav-list{
+
+  display:flex;
+  flex-direction:row;
+  justify-content: left;
+}
+
+.li{
+  padding-left:20px;
+  list-style-type:none;
+  color:white;
+}
+
+.container-fluid {
+  display:flex;
+  justify-content: left;
+  align-items: center;
+}
+
+
+a {
+  text-decoration: none;
+  
+}.nav-list2{
+
+  display:flex;
+  flex-direction:row;
+  justify-content: right;
+}
+
+.container-fluid2 {
+  display:flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction:row;
+}
+
+
+.right {
+  padding-right:20px;
+  list-style-type:none;
+  color:white;
+}
+
+.edupoints {
+  position: absolute;
+  width: 40px;
+  height: 38px;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 5;
+  top: 100px;
+  right: 25px;
+  overflow: hidden;
+  transition: 400ms;
+  border-radius: 5px;
+  text-align: right;
+  h4 {
+    color: $red;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  form {
+    padding: 15px;
+    color: white;
+    input {
+      margin: 15px;
+      height: 35px;
+      border-radius: 5px;
+      border: solid $grey 1px;
+      width: calc(100% - 30px);
+      &.datein {
+        width: calc(50% - 32px);
+      }
+    }
+    label {
+      display: none;
+    }
+  }
+}
+
+  .edupoints.active {
+    height: 500px;
+    width: 300px;
+  }
+
+.access{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding: 25vh;
+  text-decoration-color: $blue;
+  font-weight:bold;
+  font-size: 15px;
+  
+}
+
+.signupbutton {
+  padding:5vh;
+  flex-direction: column;
+}
+
+
+.signupdeco{
+font-style: oblique;
+color:darkblue;
+
+}
+
+#geoholder{
+  display: none;
+}
+
+.private{
+ 
+  background-color: $light-blue; 
+  padding:none;
+  text-decoration-color: aliceblue;
+  color:$red; 
+  justify-content: center;
+  align-items:center;
+  display:flex;  
+  width: 100vw;
+    
+}
+
+
+.home {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+  transition: 400ms;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  transform: translateX(-50%) translateY(-50%);
+  justify-content: center;
+  align-items:center;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+}
+
+.title{
+  text-decoration-color: aliceblue;
+}
+
+#center2{
+display:flex;
+justify-content: center;
+align-items: center;
+color:rgb(238, 57, 57);
+font-size: 25px;
+
+
+
+}
+
+.redbutton{
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+
+/* .searchline{
+  justify-content: left;
+  align-items: left;
+} */
+
+
+
+#add-place{
+
+
+}
+
+.mapboxgl-ctrl-geocoder input[type='text'] {
+  padding: 10px 40px 10px 30px;
+}
+
+.directions-icon-depart {
+  background-color: $blue;
+}
+
+.directions-icon-arrive {
+  background-color: $red;
+}
+
+div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
+  margin: 15px;
+}

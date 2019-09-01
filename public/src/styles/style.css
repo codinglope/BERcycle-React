@@ -1,0 +1,202 @@
+body {
+  padding: auto;
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  background-image: url(../bg.png);
+  background-size: cover; }
+
+a {
+  color: #457B9D; }
+
+label {
+  margin-bottom: 0; }
+
+.btn-danger {
+  background-color: #E63946; }
+
+.btn-primary {
+  background-color: #457B9D;
+  border-color: #C7E7E8; }
+  .btn-primary:hover {
+    background-color: #457B9D;
+    border-color: #457B9D; }
+  .btn-primary:focus {
+    box-shadow: none; }
+
+/*# sourceMappingURL=style.css.map */
+.nav-bar {
+  background-color: #C7E7E8;
+  background-image: url(../bg.png);
+  background-size: cover;
+  color: #C7E7E8;
+  padding: 15px 15px 0px 15px;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 5px #E63946; }
+  .nav-bar a {
+    color: #E63946;
+    transition: 400ms; }
+    .nav-bar a:hover {
+      color: #457B9D;
+      text-decoration: none; }
+
+.homepart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50vh; }
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: left; }
+
+.li {
+  padding-left: 20px;
+  list-style-type: none;
+  color: white; }
+
+.container-fluid {
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+a {
+  text-decoration: none; }
+
+.nav-list2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: right; }
+
+.container-fluid2 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: row; }
+
+.right {
+  padding-right: 20px;
+  list-style-type: none;
+  color: white; }
+
+.edupoints {
+  position: absolute;
+  width: 40px;
+  height: 38px;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 5;
+  top: 100px;
+  right: 25px;
+  overflow: hidden;
+  transition: 400ms;
+  border-radius: 5px;
+  text-align: right; }
+  .edupoints h4 {
+    color: #E63946;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0; }
+  .edupoints form {
+    padding: 15px;
+    color: white; }
+    .edupoints form input {
+      margin: 15px;
+      height: 35px;
+      border-radius: 5px;
+      border: solid #313330 1px;
+      width: calc(100% - 30px); }
+      .edupoints form input.datein {
+        width: calc(50% - 32px); }
+    .edupoints form label {
+      display: none; }
+
+.edupoints.active {
+  height: 500px;
+  width: 300px; }
+
+.access {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25vh;
+  text-decoration-color: #457B9D;
+  font-weight: bold;
+  font-size: 15px; }
+
+.signupbutton {
+  padding: 5vh;
+  flex-direction: column; }
+
+.signupdeco {
+  font-style: oblique;
+  color: darkblue; }
+
+#geoholder {
+  display: none; }
+
+.private {
+  background-color: #C7E7E8;
+  padding: none;
+  text-decoration-color: aliceblue;
+  color: #E63946;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100vw; }
+
+.home {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+  transition: 400ms;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  transform: translateX(-50%) translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  background-image: url(../bg.png);
+  background-size: cover; }
+
+.title {
+  text-decoration-color: aliceblue; }
+
+#center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ee3939;
+  font-size: 25px; }
+
+.redbutton {
+  width: 100%;
+  text-align: center;
+  padding: 15px; }
+
+/* .searchline{
+  justify-content: left;
+  align-items: left;
+} */
+.mapboxgl-ctrl-geocoder input[type='text'] {
+  padding: 10px 40px 10px 30px; }
+
+.directions-icon-depart {
+  background-color: #457B9D; }
+
+.directions-icon-arrive {
+  background-color: #E63946; }
+
+div.mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
+  margin: 15px; }
+
+/*# sourceMappingURL=style.css.map */
