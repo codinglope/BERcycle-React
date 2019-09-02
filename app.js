@@ -16,7 +16,7 @@ const bcrypt = require("bcrypt");
 const User = require("./models/User");
 const flash = require("connect-flash");
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost/bercycle" , {useNewUrlParser: true})
+  .connect(process.env.MONGODB_URI || "mongodb://localhost/bercyclereact" , {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
