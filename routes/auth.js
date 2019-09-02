@@ -4,6 +4,7 @@ const passport = require("passport");
 
 const User = require("../models/User");
 const router = express.Router();
+const Comment = require("../models/comment");
 
 /* router.get("/github", passport.authenticate("github"));
 

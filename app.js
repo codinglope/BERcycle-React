@@ -15,6 +15,7 @@ const GitHubStrategy = require("passport-github").Strategy;
 const bcrypt = require("bcrypt");
 const User = require("./models/User");
 const flash = require("connect-flash");
+
 mongoose
   .connect(process.env.MONGODB_URI || "mongodb://localhost/bercyclereact" , {useNewUrlParser: true})
   .then(x => {
@@ -102,23 +103,6 @@ passport.use(
 
 app.use(passport.initialize());
 app.use(passport.session());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.use(require('node-sass-middleware')({
   src:  path.join(__dirname, 'public'),

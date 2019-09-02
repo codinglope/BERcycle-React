@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 var geo = require('mapbox-geocoding');
-const Place = require("../models/place")
+const Place = require("../models/place");
+const Comment = require("../models/comment");
  
   geo.setAccessToken('pk.eyJ1IjoidHViYS1rYXNhcCIsImEiOiJjanh1ZTI0YXcwMDM4M2dtbnZ6eXJuOGs2In0.L_TRnX4VuwoBAP4cSCFCVQ');
 /* GET home page */
@@ -17,6 +18,14 @@ router.get('/api/locations',(req,res,next)=>{
     res.json(place)
   })
 })
+
+router.post("/comment", (req, res) => {
+  const { title, email, description} = req.body;
+  Comment.create({title, email, description}, (err, data) => {
+    if(err) res.send(err);
+    res.send(data);
+  })
+});
 
 router.post('/map', (req, res, next) => {
   const { name, locations } = req.body

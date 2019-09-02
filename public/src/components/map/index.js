@@ -26,7 +26,6 @@ const Map = forwardRef(({ children }, ref) => {
     pitch: 47.5,
     // zoom: 2
     zoom: 5,
-
   })
 
   const _onViewportChange = viewport => setViewPort({...viewport, transitionDuration: 3000 })
@@ -39,7 +38,13 @@ const Map = forwardRef(({ children }, ref) => {
         mapboxApiAccessToken={config.token}
         mapStyle="mapbox://styles/tuba-kasap/cjxyyrvwr052p1crzfxpiu7iw/draft"
         onViewportChange={_onViewportChange}
-      >
+         //    width: 400,
+  //   height: 400,
+  //   latitude: 13.375739,
+  //   longitude: 52.509352,
+  //   zoom: 14.5,
+  //   pitch: 47.5,
+  >
         {children}
       </MapGL>
     </div>

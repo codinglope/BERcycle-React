@@ -21,7 +21,7 @@ class Home extends React.Component {
         <div className="home"  >
           <h1 className="title">BERcycle</h1>
           <p className="title">Welcome to BERcycle</p>
-          <Link to="/map" className="btn btn-danger redbut">Enter your trip.</Link>
+          <Link to="/signup" className="btn btn-danger redbut">Enter your trip.</Link>
         </div>
       </div>
     );
