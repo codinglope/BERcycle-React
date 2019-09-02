@@ -105,16 +105,16 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(require('node-sass-middleware')({
-  src:  path.join(__dirname, 'public'),
-  dest: path.join(__dirname, 'public'),
+  src:  path.join(__dirname, 'frontend'),
+  dest: path.join(__dirname, 'frontend'),
   sourceMap: true
 }));
       
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-app.use(express.static(path.join(__dirname, 'public/build')));
-// app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+// app.use(favicon(path.join(__dirname, 'frontend', 'images', 'favicon.ico')));
 
 // default value for title local
 app.locals.title = 'BERcycle';
@@ -132,7 +132,7 @@ app.use("/", require("./routes/auth"));
 app.use("/api", require("./routes/api"));
 
 app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public/build/', 'index.html'));
+  res.sendFile(path.join(__dirname, 'frontend/build/', 'index.html'));
 });
 
 module.exports = app;
